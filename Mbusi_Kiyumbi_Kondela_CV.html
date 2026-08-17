@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mbusi Kiyumbi Kondela — CV</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    color: #24303d;
+    font-size: 9.9pt;
+    line-height: 1.4;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    display: flex;
+  }
+  /* ---------- SIDEBAR ---------- */
+  .sidebar {
+    width: 68mm;
+    background: #0b2545;
+    color: #e8edf4;
+    padding: 6mm 8mm;
+  }
+  .sidebar .name {
+    font-size: 16pt;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+  }
+  .sidebar .role {
+    font-size: 9.3pt;
+    color: #9fb3cc;
+    margin-top: 3mm;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+  .sidebar .divider {
+    height: 1px;
+    background: #2c4a72;
+    margin: 3mm 0;
+  }
+  .side-block { margin-bottom: 3.6mm; }
+  .side-title {
+    font-size: 9pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #7ea3d6;
+    margin-bottom: 3mm;
+  }
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5mm;
+    margin-bottom: 2mm;
+    font-size: 8.7pt;
+    color: #dbe4f0;
+  }
+  .contact-item .ic {
+    width: 3.6mm;
+    flex-shrink: 0;
+    margin-top: 0.3mm;
+  }
+  .contact-item .ic svg { width: 3.6mm; height: 3.6mm; display:block; }
+  .personal-row {
+    font-size: 8.7pt;
+    margin-bottom: 1.5mm;
+    color: #dbe4f0;
+  }
+  .personal-row span.lbl {
+    color: #7ea3d6;
+    display: inline-block;
+    min-width: 21mm;
+    font-weight: 600;
+  }
+  .skill-pill {
+    display: inline-block;
+    background: #16345f;
+    color: #dbe4f0;
+    font-size: 7.9pt;
+    padding: 1mm 2.6mm;
+    border-radius: 3mm;
+    margin: 0 1.2mm 1.2mm 0;
+  }
+  .interest-line { font-size: 9.1pt; color: #dbe4f0; }
+
+  /* ---------- MAIN ---------- */
+  .main {
+    flex: 1;
+    padding: 5mm 10mm 1mm 9mm;
+  }
+  .section { margin-bottom: 2.3mm; }
+  .section-title {
+    font-size: 10.8pt;
+    font-weight: 700;
+    color: #0b2545;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    padding-bottom: 1.3mm;
+    border-bottom: 1.4pt solid #0b2545;
+    margin-bottom: 2.6mm;
+  }
+  .profile-text { font-size: 9pt; color: #38424e; text-align: justify; line-height: 1.32; }
+
+  .entry { margin-bottom: 1.9mm; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 3mm;
+  }
+  .entry-title { font-size: 10pt; font-weight: 700; color: #14243b; }
+  .entry-org { font-size: 9.4pt; color: #45536b; font-style: italic; }
+  .entry-date {
+    font-size: 8.6pt;
+    color: #ffffff;
+    background: #0b2545;
+    padding: 0.7mm 2.4mm;
+    border-radius: 2.5mm;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+  ul.duties {
+    margin: 1mm 0 0 4mm;
+    padding: 0;
+  }
+  ul.duties li {
+    font-size: 8.7pt;
+    color: #3c4756;
+    margin-bottom: 0.5mm;
+  }
+
+  .comp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8mm 6mm;
+  }
+  .comp-item {
+    font-size: 8.4pt;
+    color: #3c4756;
+    padding-left: 3.6mm;
+    position: relative;
+    line-height: 1.26;
+  }
+  .comp-item b { color: #14243b; }
+  .comp-item::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 1.6mm;
+    width: 1.6mm; height: 1.6mm;
+    background: #0b2545;
+    border-radius: 50%;
+  }
+
+  table.ref-table { width: 100%; border-collapse: collapse; }
+  table.ref-table td {
+    font-size: 8.2pt;
+    color: #3c4756;
+    vertical-align: top;
+    padding: 0.9mm 2mm 0.9mm 0;
+    border-bottom: 0.5pt solid #e1e6ec;
+  }
+  table.ref-table tr:last-child td { border-bottom: none; }
+  table.ref-table .ref-name { font-weight: 700; color: #14243b; }
+  table.ref-table .ref-pos { color: #6b7788; font-style: italic; }
+
+  .declaration {
+    margin-top: 1.2mm;
+    font-size: 7.9pt;
+    color: #6b7788;
+    border-top: 0.5pt solid #e1e6ec;
+    padding-top: 1.2mm;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="name">MBUSI KIYUMBI<br>KONDELA</div>
+    <div class="role">Marketing &amp; Entrepreneurship Graduate</div>
+    <div class="divider"></div>
+
+    <div class="side-block">
+      <div class="side-title">Contact</div>
+      <div class="contact-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#7ea3d6" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <span>2257(0)66955500 / +225(0)616241500</span>
+      </div>
+      <div class="contact-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#7ea3d6" stroke-width="2"><path d="M4 4h16v16H4z" stroke="none"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></span>
+        <span>mbusikondela@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#7ea3d6" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <span>Katuma, Katavi, Tanzania</span>
+      </div>
+    </div>
+
+    <div class="side-block">
+      <div class="side-title">Personal Details</div>
+      <div class="personal-row"><span class="lbl">Date of Birth</span>18/08/1998</div>
+      <div class="personal-row"><span class="lbl">Sex</span>Male</div>
+      <div class="personal-row"><span class="lbl">Marital Status</span>Single</div>
+      <div class="personal-row"><span class="lbl">Nationality</span>Tanzanian</div>
+      <div class="personal-row"><span class="lbl">Place of Birth</span>Simiyu</div>
+      <div class="personal-row"><span class="lbl">National ID</span>19980818502040000122</div>
+    </div>
+
+    <div class="side-block">
+      <div class="side-title">Skills</div>
+      <span class="skill-pill">Supplier Relationship Mgmt</span>
+      <span class="skill-pill">Communication</span>
+      <span class="skill-pill">Teamwork &amp; Collaboration</span>
+      <span class="skill-pill">Negotiation</span>
+      <span class="skill-pill">Problem-Solving</span>
+      <span class="skill-pill">Time Management</span>
+      <span class="skill-pill">Computer Skills</span>
+      <span class="skill-pill">Data Entry &amp; Reporting</span>
+      <span class="skill-pill">Customer Service</span>
+      <span class="skill-pill">Basic Accounting &amp; Admin</span>
+      <span class="skill-pill">Record Keeping</span>
+    </div>
+
+    <div class="side-block">
+      <div class="side-title">Interests</div>
+      <div class="interest-line">Learning new technologies, tea, social networking, community volunteer work, reading books, travelling and exploring markets, helping others.</div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="section">
+      <div class="section-title">Professional Profile</div>
+      <div class="profile-text">
+        Motivated and results-oriented Bachelor of Business Administration (Marketing and Entrepreneurship)
+        graduate from Mbeya University of Science and Technology. Possesses practical experience in customer
+        support and administrative processes through field attachment at the Tanzania and Zambia Railway
+        Authority (TAZARA, Mbeya). Skilled in client relationship management, communication, and supporting
+        small business operations. Passionate about marketing innovation, entrepreneurship, and contributing
+        to business growth and community development. Also has experience as a volunteer teacher in two
+        secondary schools.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Work Experience</div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <div class="entry-title">Volunteer Teacher</div>
+          <div class="entry-date">16/03/2026 – Current</div>
+        </div>
+        <div class="entry-org">Ilandamilumba Secondary School</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <div class="entry-title">Volunteer Teacher</div>
+          <div class="entry-date">Aug 2025 – Oct 2025</div>
+        </div>
+        <div class="entry-org">Kikaro Secondary School</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <div class="entry-title">Customer Care</div>
+          <div class="entry-date">2024 (2 months)</div>
+        </div>
+        <div class="entry-org">TAZARA (Tanzania–Zambia Railway Authority), Mbeya</div>
+        <ul class="duties">
+          <li>Reservation and ticketing</li>
+          <li>Cargo and documentation</li>
+          <li>Handling inquiries and providing information</li>
+          <li>Complaints and problem solving</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Education</div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <div class="entry-title">Bachelor of Business Administration — Marketing &amp; Entrepreneurship</div>
+          <div class="entry-date">2022 – 2025</div>
+        </div>
+        <div class="entry-org">Mbeya University of Science and Technology</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <div class="entry-title">Advanced Certificate of Secondary Education (ACSEE)</div>
+          <div class="entry-date">2020 – 2022</div>
+        </div>
+        <div class="entry-org">Kilosa Agricultural Secondary School</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <div class="entry-title">Certificate of Secondary Education (CSEE)</div>
+          <div class="entry-date">2015 – 2018</div>
+        </div>
+        <div class="entry-org">Ilandamilumba Secondary School</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <div class="entry-title">Certificate of Primary Education (CPE)</div>
+          <div class="entry-date">2007 – 2013</div>
+        </div>
+        <div class="entry-org">Katuma Primary School</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Core Marketing Competencies</div>
+      <div class="comp-grid">
+        <div class="comp-item"><b>Campaign Management</b> — planning, executing and monitoring marketing campaigns across digital, print and broadcast channels.</div>
+        <div class="comp-item"><b>Brand Strategy</b> — defining and maintaining a company's brand voice, visual identity and market positioning.</div>
+        <div class="comp-item"><b>Content Creation Coordination</b> — overseeing production of copy, graphics and video for social media, websites and ads.</div>
+        <div class="comp-item"><b>Product Launching</b> — working with product teams on go-to-market plans, pricing and promotional strategy.</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">References</div>
+      <table class="ref-table">
+        <tr>
+          <td style="width:26%">
+            <div class="ref-name">Vitalis Kavishe</div>
+            <div class="ref-pos">Headmaster, Ilandamilumba Secondary School</div>
+          </td>
+          <td style="width:37%">P.O. Box 025, Tanganyika, Katavi</td>
+          <td style="width:37%">kavishevitailis@gmail.com<br>0766 207 241</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="ref-name">Aristides Mathias Noya</div>
+            <div class="ref-pos">Booking Clerk, TAZARA, Mbeya</div>
+          </td>
+          <td>P.O. Box 999, Mbeya City</td>
+          <td>noyamathias17@gmail.com<br>0715 504 094</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="ref-name">Emmanuel Kahabi</div>
+            <div class="ref-pos">Headmaster, Kikaro Secondary School</div>
+          </td>
+          <td>P.O. Box 025, Chalinze, Pwani</td>
+          <td>emmyjkn@gmail.com<br>0789 021 005</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="declaration">
+      I, Mbusi Kiyumbi Kondela, do hereby declare that the information given in this curriculum vitae is true to the best of my knowledge.
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
